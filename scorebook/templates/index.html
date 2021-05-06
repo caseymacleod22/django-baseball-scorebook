@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Baseball Scorebook</title>
+</head>
+<body>
+    <header>
+        <h1>Baseball Scorebook</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="teams/">View All Teams</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h2 class='interface'>Score:</h2>
+        <p>Away</p>
+            <input class='outsbutton' type="text" value=0>
+        <p>Home</p>
+            <input class='outsbutton' type='text' value=0>
+    <h3 class='interface'>Outs:</h3>
+        <input class='outsbutton' type="text" value=0>
+    <h4 class='interface'>Balls:</h4>
+        <input class='ballsbutton' id=ballsInput type=number min=0 max=3>
+            <button class='ballsbutton' onclick="increment()">+</button>
+            <button class='ballsbutton' onclick="decrement()">-</button>
+        <script>
+            function increment() {
+                document.getElementById('ballsInput').stepUp();
+            }
+            function decrement() {
+                document.getElementById('ballsInput').stepDown();
+            }
+        </script>
+    <h4 class='interface'>Strikes:</h4>
+    <h3 class='interface'>Baserunners:</h3>
+</body>
+</html>

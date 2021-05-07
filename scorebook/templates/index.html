@@ -21,24 +21,23 @@
     </header>
     <h2 class='interface'>Score:</h2>
         <p>Away</p>
-            <input class='outsbutton' type="text" value=0>
+            <input class='scoreboard' type="text" value=0>
         <p>Home</p>
-            <input class='outsbutton' type='text' value=0>
+            <input class='scoreboard' type='text' value=0>
     <h3 class='interface'>Outs:</h3>
-        <input class='outsbutton' type="text" value=0>
+        <input class='scoreboard' type="text" value=0>
     <h4 class='interface'>Balls:</h4>
-        <input class='ballsbutton' id=ballsInput type=number min=0 max=3>
-            <button class='ballsbutton' onclick="increment()">+</button>
-            <button class='ballsbutton' onclick="decrement()">-</button>
-        <script>
-            function increment() {
-                document.getElementById('ballsInput').stepUp();
-            }
-            function decrement() {
-                document.getElementById('ballsInput').stepDown();
-            }
-        </script>
+        <input class='scoreboard'type="text" value='0'>
     <h4 class='interface'>Strikes:</h4>
+        <input class='scoreboard'type="text" value='0'>
     <h3 class='interface'>Baserunners:</h3>
+        <form class='baserunners'>
+            <input type="checkbox" id="firstbase" name="firstbase" value="First">
+            <label for="firstbase"> Runner on first</label><br>
+            <input type="checkbox" id="secondbase" name="secondbase" value="Second">
+            <label for="secondbase"> Runner on Second</label><br>
+            <input type="checkbox" id="thirdbase" name="thirdbase" value="Third">
+            <label for="thirdbase"> Runner on third</label><br><br>
+     </form>
 </body>
 </html>

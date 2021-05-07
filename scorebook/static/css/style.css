@@ -50,8 +50,17 @@ li > a {
     padding: 1.5rem;
 }
 
-.outsbutton, .ballsbutton {
+.scoreboard {
     width: 50px;
+}
+
+.baserunners {
+    display: inline;
+}
+
+.teams {
+    display: flex;
+    justify-content: center;
 }
 
 

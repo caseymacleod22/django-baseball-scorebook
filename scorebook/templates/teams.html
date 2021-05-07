@@ -9,13 +9,23 @@
     <title>All MLB Teams</title>
 </head>
 <body>
-    <h1>All MLB Teams</h1>
-    <section>
+    <header class='teamheader'>
+        <h1 class='title'>All MLB Teams</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>   
+    <section class='teampage'>
         {% for team in scorebook %}
         <article class='teams'>
             <h1>{{ team.location }} {{ team.name }}</h1>
         </article>
         {% endfor %}
-    </section>
+    </section><br><br><br>
+    <a href='https://www.mlb.com/schedule' target='_blank'>Not sure who's playing? Click here to see today's matchups!</a>
 </body>
 </html>
